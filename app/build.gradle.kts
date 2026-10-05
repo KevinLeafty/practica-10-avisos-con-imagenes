@@ -70,6 +70,7 @@ dependencies {
     // Imágenes: Coil las baja y las pinta, con el mismo cliente que todo lo demás
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
+    implementation(libs.androidx.exifinterface)
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
