@@ -25,7 +25,7 @@ android {
     defaultConfig {
         applicationId = "mx.tec.avisos"
         minSdk = 24
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -67,8 +67,10 @@ dependencies {
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.okhttp.sse)
     implementation(libs.androidx.work.runtime)
+    // Imágenes: Coil las baja y las pinta, con el mismo cliente que todo lo demás
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
-    // Hilt (Práctica 9): la librería, el generador de código, y sus piezas para ViewModel y WorkManager
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.androidx.hilt.lifecycle.viewmodel.compose)
